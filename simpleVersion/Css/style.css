@@ -21,12 +21,9 @@ body {
   margin-bottom: 10px;
 }
 
+/* Estilização dos botões */
 .buttons {
   margin-top: 10px;
-}
-
-.toggle {
-  display: inline-block;
 }
 button{
   border: none;
@@ -95,7 +92,6 @@ button{
 .toggle input:active ~ .button {
   filter: blur(0.5px);
   box-shadow: 0 12px 25px -4px rgba(0, 0, 0, 0.4), inset 0 -8px 30px 1px rgba(255, 255, 255, 0.9), 0 -10px 15px -1px rgba(255, 255, 255, 0.6), inset 0 8px 25px 0 rgba(0, 0, 0, 0.4), inset 0 0 10px 1px rgba(255, 255, 255, 0.6);
-  background-color: black;
 }
 
 .toggle input:active ~ .label {
@@ -113,7 +109,13 @@ button{
   color: #fff;
   transform: rotate(180deg);
 }
+
+/* Edição colocada na mudança do tema da pg */
 .dark-theme{
   background: black;
-  color: rgb(96, 80, 176);
+  color: rgb(54, 9, 29);
+}
+.dark-theme .clock{
+  background: rgb(251, 245, 245);
+  box-shadow: 0 12px 25px -4px rgba(0, 0, 0, 0.4), inset 0 4px 30px 1px rgba(255, 255, 255, 0.9), 0 -10px 15px -1px rgba(255, 255, 255, 0.6), inset 0 8px 25px 0 rgba(0, 0, 0, 0.4), inset 0 0 10px 1px rgba(255, 255, 255, 0.6);
 }
