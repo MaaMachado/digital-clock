@@ -9,7 +9,6 @@
     height: fit-content;
     text-align: center;
     margin: 5% auto;
-    background-color: rgb(0, 0, 0);
   }
   /* h1 */
   #titleP{
@@ -19,11 +18,11 @@
       font-weight: 800;
       font-family: Arial, Helvetica, sans-serif;
       text-align: center;
-      -webkit-text-stroke: #fff 0.1rem;
+      -webkit-text-stroke: #4d4a4a 0.1rem;
       letter-spacing: 0.2rem;
       color: transparent;
       position: relative;
-      text-shadow: 0px 0px 16px #CECECE; 
+      text-shadow: 0px 0px 16px #8a8787; 
   }
   /* Arte de luz - h1 */
   @keyframes flickering {
@@ -65,17 +64,163 @@
     }
   }
 
-  main{
-    display: flex;
-    justify-content: space-between;
-    width: 60%;
-    height: fit-content;
-    text-align: center;
-    margin: 0 auto;
-    background-color: beige;
-    padding: 1.5rem 3rem;
+  /* Estilização do relógio */
+.time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 8% auto;
+}
+
+.card {
+  width: 10.625rem;
+  height: 11rem;
+  background: #cacdd2;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  place-items: center;
+  overflow: hidden;
+  border-radius: 1.25rem;
+  margin-right: 1rem;
+}
+
+.card .time-box{
+  z-index: 1;
+  color: white;
+  font-size: 2em;
+  font-weight: bold;
+}
+.card .type-box{
+  z-index: 1;
+  color: white;
+  font-size: 1.5em;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  width: 100px;
+  background-image: linear-gradient(180deg, rgb(127, 127, 110), rgb(50, 48, 50));
+  height: 130%;
+  animation: rotBGimg 3s linear infinite;
+  transition: all 0.2s linear;
+}
+
+@keyframes rotBGimg {
+  from {
+    transform: rotate(0deg);
   }
-  .box{
-    border: 1px solid aquamarine;
-    padding: 1rem 2rem;
+
+  to {
+    transform: rotate(360deg);
   }
+}
+
+.card::after {
+  content: '';
+  position: absolute;
+  background: #605f5f;
+  inset: 5px;
+  border-radius: 15px;
+} 
+
+.form12-box{
+  margin-top: -5rem;
+  font-weight: bolder;
+}
+
+/* PARTE DOS CONTROLES DO RELÓGIO */
+
+.clock {
+  width: 55%;
+  margin: 5% auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+}
+
+.controls {
+  display: flex;
+  margin-top: 5px;
+}
+
+.dropdown {
+  position: relative;
+  margin: 0 10px;
+}
+
+.selected-option {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  --gray: #555c59;
+  padding: 0.3em 1em;
+  letter-spacing: 0.06em;
+  position: relative;
+  font-family: inherit;
+  overflow: hidden;
+  transition: all 0.3s;
+  line-height: 1.4em;
+  border: 2px solid var(--gray);
+  background: linear-gradient(to right, rgba(121, 122, 121, 0.1) 1%, transparent 40%,transparent 60% , rgba(140, 144, 142, 0.1) 100%);
+  color: var(--gray);
+  box-shadow: inset 0 0 10px rgba(63, 66, 64, 0.4), 0 0 9px 3px rgba(50, 51, 51, 0.1);
+}
+.selected-option:hover {
+  color: #191a19;
+  box-shadow: inset 0 0 10px rgba(153, 154, 154, 0.6), 0 0 9px 3px rgba(166, 169, 168, 0.2);
+}
+
+.selected-option:before {
+  content: "";
+  position: absolute;
+  left: -4em;
+  width: 4em;
+  height: 100%;
+  top: 0;
+  transition: transform .4s ease-in-out;
+  background: linear-gradient(to right, transparent 1%, rgba(33, 40, 35, 0.1) 40%,rgba(33, 36, 33, 0.1) 60% , transparent 100%);
+}
+
+.selected-option:hover:before {
+  transform: translateX(15em);
+}
+
+.selected-option .icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+
+.options-list {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-top: none;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.option {
+  padding: 5px;
+  transition: background-color 0.2s;
+  cursor: pointer;
+}
+
+.option:hover {
+  background-color: #f0f0f0;
+}

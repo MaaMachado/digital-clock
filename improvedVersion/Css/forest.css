@@ -1,0 +1,51 @@
+/* Todas as mudanças do tema forest */
+body.forest {
+  background-image: url("img/fundoForest.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+body.forest .selected-option{
+  border: 2px solid rgb(59, 39, 2);
+  background: linear-gradient(to right, rgba(5, 255, 1, 0.1) 1%, transparent 10%,transparent 10% , rgba(26, 117, 61, 0.1) 100%);
+  color: white;
+  box-shadow: inset 0 0 10px rgba(195, 255, 165, 0.4), 0 0 9px 3px rgba(22, 214, 12, 0.1);
+}
+body.forest .selected-option:hover{
+  color: #22ff00;
+  box-shadow: inset 0 0 10px rgba(108, 240, 159, 0.6), 0 0 9px 3px rgba(116, 44, 21, 0.2);
+}
+body.forest .theme-dropdown .selected-option .icon{
+  background-color: #029c2e;
+}
+body.forest .format-dropdown .selected-option .icon {
+  background-color: rgb(146, 87, 5);
+}
+body.forest .card  {
+  background: rgb(95, 67, 26);
+  
+}
+body.forest .card .time-box{
+  color: rgb(6, 75, 4);;
+}
+body.forest .card .type-box{
+  color: rgb(58, 40, 2);
+}
+body.forest .card::before {
+  background-image: linear-gradient(180deg, #34cf1c, #077a13);
+}
+
+body.forest .card::after {
+  background: rgb(215, 248, 190);
+} 
+
+body.forest .form12-box{
+  color: #f2e7df;
+  background: #0c3f16;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+body.forest .clock{
+  background-color: #0c3f16;
+  border: 1px solid #4d2d05;
+}

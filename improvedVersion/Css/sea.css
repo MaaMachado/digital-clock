@@ -1,0 +1,41 @@
+/* Todas as mudanças do tema sea */
+body.sea {
+  background-image: url("img/fundoSea.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+body.sea .selected-option:hover{
+  color: #0037ff;
+}
+body.sea .theme-dropdown .selected-option .icon{
+  background-color: #02429c;
+}
+body.sea .format-dropdown .selected-option .icon {
+  background-color: rgb(5, 146, 144);
+}
+body.sea .card  {
+  background: rgb(158, 238, 237);
+  
+}
+body.sea .card .time-box{
+  color: rgb(4, 41, 75);;
+}
+body.sea .card .type-box{
+  color: rgb(31, 104, 152);
+}
+body.sea .card::before {
+  background-image: linear-gradient(180deg, #1ccf93, #0b5197);
+}
+
+body.sea .card::after {
+  background: rgb(87, 190, 253);
+} 
+
+body.sea .form12-box{
+  color: #41d3ff;
+}
+
+body.sea .clock{
+  background-color: rgb(187, 250, 245);
+  border: 1px solid #38a1f8;
+}

@@ -1,0 +1,48 @@
+/* Todas as mudanças do tema light */
+body.light {
+  background-image: url("img/fundoLight.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+body.light .selected-option{
+  border: 2px solid white;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.1) 1%, transparent 30%,transparent 30% , rgba(117, 117, 26, 0.1) 100%);
+  color: white;
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.4), 0 0 9px 3px rgba(255, 255, 255, 0.1);
+}
+body.light .selected-option:hover{
+  color: #9c730d;
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.6), 0 0 9px 3px rgba(251, 242, 229, 0.2);
+}
+body.light .theme-dropdown .selected-option .icon {
+  background-color: rgb(232, 249, 0);
+}
+body.light .format-dropdown .selected-option .icon {
+  background-color: rgb(232, 249, 0);
+}
+body.light .card  {
+  background: #fce08d;
+  
+}
+body.light .card .time-box{
+  color: #ffea00;
+}
+body.light .card .type-box{
+  color: rgb(159, 155, 19);
+}
+body.light .card::before {
+  background-image: linear-gradient(180deg, rgb(166, 252, 147), rgb(245, 192, 93));
+}
+
+body.light .card::after {
+  background: rgb(250, 250, 250);
+} 
+
+body.light .form12-box{
+  color: #598130;
+}
+
+body.light .clock{
+  background-color: rgb(230, 225, 77);
+  border: 1px solid #fdd7e3;
+}

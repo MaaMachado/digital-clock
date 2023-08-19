@@ -1,0 +1,48 @@
+/* Todas as mudanças do tema forest */
+body.space {
+  background-image: url("img/fundoSpace.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+body.space .selected-option{
+  border: 2px solid rgb(233, 231, 228);
+  background: linear-gradient(to right, rgba(183, 1, 255, 0.1) 1%, transparent 10%,transparent 10% , rgba(76, 26, 117, 0.1) 100%);
+  color: white;
+  box-shadow: inset 0 0 10px rgba(219, 165, 255, 0.4), 0 0 9px 3px rgba(214, 12, 190, 0.1);
+}
+body.space .selected-option:hover{
+  color: #ff00ff;
+  box-shadow: inset 0 0 10px rgba(170, 108, 240, 0.6), 0 0 9px 3px rgba(43, 21, 116, 0.2);
+}
+body.space .theme-dropdown .selected-option .icon{
+  background-color: #4a029c;
+}
+body.space .format-dropdown .selected-option .icon {
+  background-color: #3B5E96;
+}
+body.space .card  {
+  background: #98AFDD;
+  
+}
+body.space .card .time-box{
+  color: rgb(29, 4, 75);;
+}
+body.space .card .type-box{
+  color: rgb(58, 2, 57);
+}
+body.space .card::before {
+  background-image: linear-gradient(180deg, #701ccf, #18077a);
+}
+
+body.space .card::after {
+  background: #e9c8fb;
+} 
+
+body.space .form12-box{
+  color: #f2e7df;
+}
+
+body.space .clock{
+  background-color: #0e0c3f;
+  border: 1px solid #f3adf8;
+}
