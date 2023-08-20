@@ -4,6 +4,11 @@ body.forest {
   background-size: cover;
   background-repeat: no-repeat;
 }
+body.forest #titleP{
+  -webkit-text-stroke: #241501 0.1rem;
+  text-shadow: 0px 0px 16px #4dff00; 
+}
+
 body.forest .selected-option{
   border: 2px solid rgb(59, 39, 2);
   background: linear-gradient(to right, rgba(5, 255, 1, 0.1) 1%, transparent 10%,transparent 10% , rgba(26, 117, 61, 0.1) 100%);

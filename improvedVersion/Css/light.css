@@ -4,10 +4,15 @@ body.light {
   background-size: cover;
   background-repeat: no-repeat;
 }
+body.light #titleP{
+  -webkit-text-stroke: #d6cd11 0.1rem;
+  text-shadow: 0px 0px 16px #fafafa; 
+}
+
 body.light .selected-option{
   border: 2px solid white;
   background: linear-gradient(to right, rgba(255, 255, 255, 0.1) 1%, transparent 30%,transparent 30% , rgba(117, 117, 26, 0.1) 100%);
-  color: white;
+  color: rgb(106, 90, 61);
   box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.4), 0 0 9px 3px rgba(255, 255, 255, 0.1);
 }
 body.light .selected-option:hover{
@@ -43,6 +48,6 @@ body.light .form12-box{
 }
 
 body.light .clock{
-  background-color: rgb(230, 225, 77);
+  background-color: rgb(235, 233, 149);
   border: 1px solid #fdd7e3;
 }

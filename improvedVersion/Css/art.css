@@ -12,7 +12,7 @@
     width: 60%;
     height: fit-content;
     text-align: center;
-    margin: 5% auto;
+    margin: 8% auto;
   }
   /* h1 */
   #titleP{
@@ -226,4 +226,8 @@
 
 .option:hover {
   background-color: #f0f0f0;
+}
+
+@media (max-width: 800px) {
+  
 }

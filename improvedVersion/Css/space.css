@@ -4,6 +4,11 @@ body.space {
   background-size: cover;
   background-repeat: no-repeat;
 }
+body.space #titleP{
+  -webkit-text-stroke: #0d0124 0.1rem;
+  text-shadow: 0px 0px 16px #e2bcfa; 
+}
+
 body.space .selected-option{
   border: 2px solid rgb(233, 231, 228);
   background: linear-gradient(to right, rgba(183, 1, 255, 0.1) 1%, transparent 10%,transparent 10% , rgba(76, 26, 117, 0.1) 100%);
